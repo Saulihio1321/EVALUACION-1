@@ -1,0 +1,49 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author invitado
+ */
+public class persona {
+    //nombre appelido y edad
+    private String nombre; 
+    private String apellido; 
+    private int edad;
+    
+    //metodo get y set
+    public String getnombre(){
+    return nombre;
+    }
+    public void setnombre(String valor){
+    nombre = valor;
+    }
+    public String getapellido(){
+    return apellido;
+    }
+    public void setapellido(String valor){
+    apellido = valor;
+    }
+    public int getedad(){
+    return edad;
+    }
+    public void setedad(int valor){
+    edad = valor;
+    }
+    
+    //reglas para el nombre de los metodos en java
+    //empezar los metodos en un verbo, empieza eb minuscula
+    public String generarnombrecom(){
+        return nombre + " " + apellido;
+    
+    }
+    //calcular año de nacimiento
+    public int calcularannionac(){
+        return 2024 - edad;
+    
+    }
+    
+}
